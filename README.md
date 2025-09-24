@@ -1,5 +1,7 @@
 🌊 Software Engineering Project – Hệ thống bán hàng trực tuyến của Câu lạc bộ Bơi lội 🏊🏻‍♂️
-
+<p align="center">
+  𓆝 𓆟 𓆞 𓆝 𓆟
+</p>
 💦 Giới thiệu
 
 - Dự án này được phát triển trong môn Nhập môn Công nghệ Phần mềm.
