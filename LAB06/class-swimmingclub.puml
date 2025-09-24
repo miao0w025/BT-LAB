@@ -1,0 +1,61 @@
+@startuml
+class KhachHang {
+  - customerId : int
+  - ten : String
+  - email : String
+  - diaChi : String
+  - sdt : String
+  + dangNhap(email:String, matkhau:String) : boolean
+  + datHang() : DonHang
+}
+
+class SanPham {
+  - productId : int
+  - ten : String
+  - gia : double
+  - soLuongTon : int
+  + capNhatTonKho(sl:int)
+}
+
+class DonHang {
+  - orderId : int
+  - ngayDat : Date
+  - tongTien : double
+  - trangThai : String
+  + tinhTongTien() : double
+  + capNhatTrangThai(tt:String)
+}
+
+class GioHang {
+  - items : List<GioHangItem>
+  + themSanPham(sp:SanPham, sl:int)
+  + xoaSanPham(sp:SanPham)
+  + tinhTongTien() : double
+}
+
+class GioHangItem {
+  - soLuong : int
+  + tinhTien() : double
+}
+
+class ThanhToan {
+  - paymentId : int
+  - phuongThuc : String
+  - soTien : double
+  - trangThai : String
+  + xuLyThanhToan(dh:DonHang) : boolean
+}
+
+class Kho {
+  - danhSachSanPham : List<SanPham>
+  + capNhatSoLuong(sp:SanPham, sl:int)
+}
+
+KhachHang "1" --> "1" GioHang
+GioHang "1" --> "*" GioHangItem
+GioHangItem "*" --> "1" SanPham
+KhachHang "1" --> "*" DonHang
+DonHang "1" --> "1" ThanhToan
+DonHang "*" --> "*" SanPham
+Kho "1" --> "*" SanPham
+@enduml
