@@ -11,9 +11,9 @@
 
 - Trần Thanh Hà – Leader ₍^. .^₎⟆
 
-- Phan Phương Nghi – hông biết ₍ᐢ. .ᐢ₎
+- Phan Phương Nghi – Member ₍ᐢ. .ᐢ₎
 
-- Đỗ Ngọc Cát Tường - hông biết (•˕ •マ.ᐟ
+- Đỗ Ngọc Cát Tường - Member (•˕ •マ.ᐟ
 
 💦 Use Case chính
 - Đặt hàng và thanh toán
