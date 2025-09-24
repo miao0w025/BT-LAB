@@ -19,7 +19,7 @@ Phan Phương Nghi – hông biết ₍ᐢ. .ᐢ₎
 
 Quản lý sản phẩm
 
-![Use Case Diagram](images/L1.DIAGRAM.png)
+![Use Case Diagram](LAB01/L1.DIAGRAM.png)
 
 💦 Thiết kế hệ thống
 
