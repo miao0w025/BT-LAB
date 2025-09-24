@@ -11,6 +11,7 @@ Phan Phương Nghi – hông biết ₍ᐢ. .ᐢ₎
 💦 Use Case chính
 Đặt hàng và thanh toán
 Quản lý sản phẩm
+![Use Case Diagram](images.png)
 
 💦 Thiết kế hệ thống
 Use Case Diagram: Use Case
