@@ -26,7 +26,7 @@
 - ERD (Entity Relationship Diagram): ERD
 
 💦 Công nghệ sử dụng
-- Ngôn ngữ: Java / Python / JavaScript / PHP
+- Ngôn ngữ: JavaScript
 - IDE: Visual Studio Code
 - CSDL: MySQL / PostgreSQL
 - Quản lý phiên bản: Git + GitHub
