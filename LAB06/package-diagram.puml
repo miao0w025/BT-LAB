@@ -1,0 +1,31 @@
+@startuml
+package UI {
+  class TrangChuUI
+  class GioHangUI
+  class ThanhToanUI
+}
+
+package Controller {
+  class DonHangController
+  class SanPhamController
+  class ThanhToanController
+}
+
+package Service {
+  class DonHangService
+  class SanPhamService
+  class ThanhToanService
+}
+
+package Data {
+  class KhachHang
+  class DonHang
+  class SanPham
+  class Kho
+  class ThanhToan
+}
+
+UI --> Controller
+Controller --> Service
+Service --> Data
+@enduml
