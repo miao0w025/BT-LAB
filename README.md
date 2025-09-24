@@ -19,7 +19,7 @@ Phan Phương Nghi – hông biết ₍ᐢ. .ᐢ₎
 
 Quản lý sản phẩm
 
-![Use Case Diagram](https://github.com/miao0w025/BT-LAB/blob/main/LAB01/L1.DIAGRAM.png?raw=true)
+![Use Case Diagram](LAB01/L1.DIAGRAM.png)
 
 💦 Thiết kế hệ thống
 
