@@ -17,6 +17,7 @@
 - Đặt hàng và thanh toán
 - Quản lý sản phẩm
 ![Use Case Diagram](https://github.com/miao0w025/BT-LAB/blob/main/L1.DIAGRAM.png?raw=true)
+
 💦 Thiết kế hệ thống
 - Use Case Diagram: Use Case
 - Sequence Diagram: Sequence
