@@ -16,7 +16,7 @@ Dự án xây dựng hệ thống web bán hàng trực tuyến cho CLB Bơi l�
 
 - Sequence Diagram
 
-![Sequence Diagram](https://github.com/miao0w025/BT-LAB/blob/main/LAB03/SquenceDiagram.png?raw=true)
+![SequenceDiagram](https://github.com/miao0w025/BT-LAB/blob/main/LAB03/SquenceDiagram.png?raw=true)
 
 - Source Code (Form login, CRUD sản phẩm, giỏ hàng)
 
