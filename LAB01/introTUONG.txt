@@ -1,1 +1,19 @@
+Hello, my name is Cat Tuong.  
+I am currently a Multimedia Technology student at PTIT.  
 
+🔹 Interests:
+- Filming, taking pictures, editing media videos and branding 
+- Web and mobile interface design  
+- Artificial Intelligence and Machine Learning
+
+🔹 Skills
+- Media production: Filming, photography, video editing, branding content
+- Design: Web and mobile UI/UX design (Figma, Adobe XD, Photoshop)
+- Programming: HTML, CSS, JavaScript, Python (basic for media automation)
+- Tools: Git, Visual Studio Code, Jira, MySQL
+
+🔹 Goals
+To become a professional multimedia and UI/UX designer
+To create meaningful digital experiences through visual storytelling and design
+To combine creativity with technology in order to develop innovative media and branding solutions
+Thank you for reading my introduction.
