@@ -11,10 +11,12 @@ Dự án xây dựng hệ thống web bán hàng trực tuyến cho CLB Bơi l�
 
 ## 🏊‍♀️ Artifacts
 - Use Case Diagram
+
 ![Use Case Diagram](https://github.com/miao0w025/BT-LAB/blob/main/LAB02/UseCaseDiagram.png?raw=true)
 - Sequence Diagram
+
 ![SequenceDiagram](https://github.com/miao0w025/BT-LAB/blob/main/LAB03/SequenceDiagram.png?raw=true)
-- Source Code (Form login, CRUD sản phẩm, giỏ hàng)
+- Source Code (Form login)
 
 ## 🏊‍♀️ Kết quả
 - Hệ thống cơ bản cho phép khách hàng đăng nhập, xem sản phẩm, đặt hàng.
