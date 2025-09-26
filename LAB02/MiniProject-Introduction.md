@@ -21,7 +21,7 @@ bên ngoài một cách nhanh chóng và tiện lợi thông qua nền tảng tr
 3. Tích hợp với hệ thống thanh toán
 4. Xử lý thanh toán trực tuyến qua cổng thanh toán (ví dụ: ví điện tử, thẻ ngân hàng).
 
-- Mục tiêu hệ thống
+## Mục tiêu hệ thống
 1. Đơn giản hóa quá trình mua bán sản phẩm lưu niệm của CLB.
 2. Giúp khách hàng mua hàng tiện lợi, nhanh chóng mà không cần đến trực tiếp CLB.
 3. Giúp ban quản lý dễ dàng theo dõi, thống kê doanh thu và quản lý hàng hóa.
