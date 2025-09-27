@@ -295,7 +295,13 @@ def create_order(customer_id, product_id, quantity, payment_method):
 
 4.6.1. Test case (Lab 08).
 
+* Thành công
 
+![pass](https://github.com/miao0w025/BT-LAB/blob/main/LAB08/passtest.png?raw=true)
+
+* Thất bại
+
+![fail](https://github.com/miao0w025/BT-LAB/blob/main/LAB08/failtest.png?raw=true)
 
 4.6.2. Jira backlog, sprint report (Lab 09).
 
