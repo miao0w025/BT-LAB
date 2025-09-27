@@ -135,14 +135,13 @@ Mỗi User Story phải:
 ## 9. Evidence từ Jira
 
 * Backlog (Epic + User Stories)
-![BL](main/LAB09/jiraimages/1.1.png)
-![BL](main/LAB09/jiraimages/1.2.png)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/1.1.png?raw=true)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/1.2.png?raw=true)
 
 * Sprint Board (To Do → In Progress → Done)
-  
-
-* Burndown Chart
- 
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/2.1.png?raw=true)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/2.2.png?raw=true)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/2.3.png?raw=true)
 
 ---
 
