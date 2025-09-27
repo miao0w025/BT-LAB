@@ -115,9 +115,9 @@
 
 ## 7. Phân công thành viên
 
-* **Trần Thanh Hà:** Backend (Auth, Product CRUD, Order API)
-* **Phan Phương Nghi:** Frontend (UI Auth, Product List, Checkout)
-* **Đỗ Ngọc Cát Tường:** Admin Dashboard, Reporting, Responsive Design
+* **Trần Thanh Hà:** Sản phẩm, Giỏ hàng, Xử lý đơn, Thanh toán
+* **Phan Phương Nghi:** Cơ bản, Xác thực, Quản lý sản phẩm và người dùng
+* **Đỗ Ngọc Cát Tường:** Giao diện, Trải nghiệm, Báo cáo, Thống kê
 
 ---
 
