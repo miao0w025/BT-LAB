@@ -135,7 +135,8 @@ Mỗi User Story phải:
 ## 9. Evidence từ Jira
 
 * Backlog (Epic + User Stories)
- 
+![BL](main/LAB09/jiraimages/1.1.png)
+![BL](main/LAB09/jiraimages/1.2.png)
 
 * Sprint Board (To Do → In Progress → Done)
   
