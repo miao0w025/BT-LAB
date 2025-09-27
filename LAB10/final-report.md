@@ -6,15 +6,15 @@
 
 Use Case Diagram (Lab 02).
 
-!(https://github.com/miao0w025/BT-LAB/blob/main/LAB02/UseCaseDiagram.png?raw=true)
+![ucl2](https://github.com/miao0w025/BT-LAB/blob/main/LAB02/UseCaseDiagram.png?raw=true)
 
 Sequence Diagram cho Đặt hàng & Thanh toán (Lab 03).
 
-!(https://github.com/miao0w025/BT-LAB/blob/main/LAB03/SequenceDiagram.png?raw=true)
+![scl3](https://github.com/miao0w025/BT-LAB/blob/main/LAB03/SequenceDiagram.png?raw=true)
 
 Class Diagram (Lab 06).
 
-!(https://github.com/miao0w025/BT-LAB/blob/main/LAB06/class-swimmingclub.png?raw=true)
+![class](https://github.com/miao0w025/BT-LAB/blob/main/LAB06/class-swimmingclub.png?raw=true)
 
 ## Cơ sở dữ liệu & code minh hoạ
 
