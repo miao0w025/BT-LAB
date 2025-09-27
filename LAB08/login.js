@@ -4,11 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const passwordInput = document.getElementById("password");
 
   loginBtn.addEventListener("click", function (event) {
-    event.preventDefault(); // chặn reload trang
+    event.preventDefault(); 
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
 
-    // Xóa thông báo cũ
     let oldMsg = document.querySelector(".login-message");
     if (oldMsg) oldMsg.remove();
 
