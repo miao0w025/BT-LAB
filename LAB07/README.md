@@ -14,9 +14,11 @@ Mô phỏng chức năng **thanh toán đơn hàng** cho trang bán đồ lưu n
    mysql -u root -p < csdl.sql
 
 2. Cài thư viện Python:
+
 pip install mysql-connector-python
 
 3. Chạy test:
+
 python test_thanh_toan.py
 
 📸 Kết quả
