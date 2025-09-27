@@ -1,4 +1,6 @@
 # Lab 09 – Quản lý dự án Website Bán hàng CLB Bơi lội HNT (Agile/Scrum)
+## Link Jira Project
+[Truy cập Jira](https://miao0w0.atlassian.net/jira/software/projects/NB/summary)
 
 ## 1. Thông tin dự án
 
