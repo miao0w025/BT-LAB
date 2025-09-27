@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginBtn = document.getElementById("loginBtn");
-  const usernameInput = document.getElementById("username");
-  const passwordInput = document.getElementById("password");
+  const payBtn = document.getElementById("payBtn");
+  const cardInput = document.getElementById("cardNumber");
+  const pinInput = document.getElementById("pin");
 
-  loginBtn.addEventListener("click", function (event) {
-    event.preventDefault(); 
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
+  payBtn.addEventListener("click", function (event) {
+    event.preventDefault();
 
-    let oldMsg = document.querySelector(".login-message");
+    // Xóa message cũ
+    let oldMsg = document.querySelector(".pay-message");
     if (oldMsg) oldMsg.remove();
 
     const message = document.createElement("p");
-    message.classList.add("login-message");
+    message.classList.add("pay-message");
 
-    if (!username || !password) {
-      message.textContent = "Vui lòng nhập thông tin";
+    const card = cardInput.value.trim();
+    const pin = pinInput.value.trim();
+
+    if (!card || !pin) {
+      message.textContent = "Vui lòng nhập thông tin thanh toán";
       message.style.color = "orange";
-    } else if (username === "nghi" && password === "123456") {
-      message.textContent = "Đăng nhập thành công";
+    } else if (card === "12345678" && pin === "9999") {
+      message.textContent = "Thanh toán thành công";
       message.style.color = "green";
     } else {
-      message.textContent = "Sai tên đăng nhập hoặc mật khẩu";
+      message.textContent = "Thanh toán thất bại, vui lòng thử lại";
       message.style.color = "red";
     }
 
