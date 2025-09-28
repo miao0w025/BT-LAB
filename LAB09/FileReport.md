@@ -145,6 +145,11 @@ Mỗi User Story phải:
 ![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/2.2.png?raw=true)
 ![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/2.3.png?raw=true)
 
+* Sprint Burndown Chart 
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/BURNDOWN-SPRINT01.png?raw=true)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/BURNDOWN-SPRINT02.png?raw=true)
+![BL](https://github.com/miao0w025/BT-LAB/blob/main/LAB09/jiraimages/BURNDOWN-SPRINT03.png?raw=true)
+
 ---
 
 ## 10. Sprint Report & Retrospective
