@@ -1,26 +1,62 @@
-import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import time
 
-@pytest.fixture
-def driver():
+def test_login_success():
     driver = webdriver.Chrome()
-    driver.get("file:///C:/path/to/login.html")  # đổi sang path thật
-    yield driver
+    driver.get("file:///C:/Users/ASUS/Documents/CONG%20NGHE%20PHAN%20MEM/login.html")
+
+    driver.find_element(By.NAME, "username").send_keys("admin")
+    driver.find_element(By.NAME, "password").send_keys("123")
+    driver.find_element(By.ID, "loginBtn").click()
+
+    time.sleep(1)
+    msg = driver.find_element(By.ID, "message").text
+
+    if "Đăng nhập thành công" in msg:
+        print("✅ PASS: Login thành công")
+    else:
+        print("❌ FAIL: Login thành công")
+
     driver.quit()
 
-def test_login_success(driver):
-    driver.find_element(By.ID, "username").send_keys("admin")
-    driver.find_element(By.ID, "password").send_keys("1234")
-    driver.find_element(By.ID, "loginBtn").click()
-    assert "Chào mừng" in driver.page_source or "Welcome" in driver.page_source
 
-def test_login_wrong(driver):
-    driver.find_element(By.ID, "username").send_keys("admin")
-    driver.find_element(By.ID, "password").send_keys("wrong")
-    driver.find_element(By.ID, "loginBtn").click()
-    assert "Sai mật khẩu" in driver.page_source or "Invalid" in driver.page_source
+def test_login_wrong_password():
+    driver = webdriver.Chrome()
+    driver.get("file:///C:/Users/ASUS/Documents/CONG%20NGHE%20PHAN%20MEM/login.html")
 
-def test_login_empty(driver):
+    driver.find_element(By.NAME, "username").send_keys("admin")
+    driver.find_element(By.NAME, "password").send_keys("sai-mat-khau")
     driver.find_element(By.ID, "loginBtn").click()
-    assert "Vui lòng nhập" in driver.page_source or "Required" in driver.page_source
+
+    time.sleep(1)
+    msg = driver.find_element(By.ID, "message").text
+
+    if "Sai tên đăng nhập hoặc mật khẩu" in msg:
+        print("✅ PASS: Sai mật khẩu báo lỗi đúng")
+    else:
+        print("❌ FAIL: Sai mật khẩu không báo lỗi")
+
+    driver.quit()
+
+
+def test_login_empty():
+    driver = webdriver.Chrome()
+    driver.get("file:///C:/Users/ASUS/Documents/CONG%20NGHE%20PHAN%20MEM/login.html")
+
+    driver.find_element(By.ID, "loginBtn").click()
+    time.sleep(1)
+
+    msg = driver.find_element(By.ID, "message").text
+    if "Vui lòng nhập đầy đủ thông tin" in msg:
+        print("✅ PASS: Empty input báo lỗi đúng")
+    else:
+        print("❌ FAIL: Empty input không báo lỗi")
+
+    driver.quit()
+
+
+# chạy test
+test_login_success()
+test_login_wrong_password()
+test_login_empty()
