@@ -1,7 +1,22 @@
-from order_module import create_order
+# test_order.py
+import pytest
+from order import Order
 
-# Test 1: mua 1 kính bơi
-create_order(customer_id=1, product_id=2, quantity=1, payment_method="MOMO")
+@pytest.fixture
+def order():
+    return Order(stock=10)
 
-# Test 2: mua 5 phao bơi (quá tồn kho)
-create_order(customer_id=1, product_id=3, quantity=5, payment_method="CASH")
+def test_purchase_success(order):
+    result = order.purchase(3)
+    assert result == "Order successful"
+    assert order.stock == 7
+
+def test_purchase_not_enough_stock(order):
+    result = order.purchase(20)
+    assert result == "Not enough stock"
+    assert order.stock == 10
+
+def test_purchase_invalid(order):
+    result = order.purchase(0)
+    assert result == "Invalid quantity"
+    assert order.stock == 10
