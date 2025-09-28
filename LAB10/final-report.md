@@ -4,9 +4,9 @@
 
 **Nhóm:** 30
 
-**Thành viên:**
-  - Trần Thanh Hà - N23DCPT018
+**Thành viên:** 
   - Phan Phương Nghi - N23DCPT037
+  - Trần Thanh Hà - N23DCPT018
   - Đỗ Ngọc Cát Tường - N23DCPT055
 
 ---
@@ -73,7 +73,9 @@
 
 ![class](https://github.com/miao0w025/BT-LAB/blob/main/LAB06/class-swimmingclub.png?raw=true)
 
-### 4.4. Database Design (MySQL)
+## 5. Cơ sở dữ liệu & code minh hoạ
+
+### 5.1. Database Design (MySQL)
 
 * Bảng **KhachHang(id, ten, email, matkhau, sdt, diachi)**
 * Bảng **SanPham(id, ten, mota, gia, soluong, hinhanh)**
@@ -81,9 +83,7 @@
 * Bảng **ChiTietDonHang(id, idDonHang, idSanPham, soLuong, gia)**
 * Bảng **Admin(id, tenDangNhap, matkhau)**
 
-### 4.5. Cơ sở dữ liệu & code minh hoạ
-
-4.5.1. ERD & script tạo bảng (Lab 05).
+### 5.2. ERD & script tạo bảng (Lab 05).
 
   1. Các bảng chính trong ERD
 
@@ -107,7 +107,7 @@
 
 * kho (1) ───< (n) san_pham
 
-3. Script tạo bảng
+### 5.3. Script tạo bảng
 
 ```
 
@@ -168,9 +168,7 @@ INSERT INTO SanPham(ten,gia,soLuongTon) VALUES
 
 ```
 
-4.5.2. Demo code: form login (Lab 04), đặt hàng (Lab 07).
-
-* Form login HTML (Lab 04)
+### 5.4. Form login HTML (Lab 04)
 
 ```
 
@@ -181,8 +179,19 @@ INSERT INTO SanPham(ten,gia,soLuongTon) VALUES
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Đăng nhập - HNT Swim Club</title>
   <link rel="stylesheet" href="style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #message.success {
+      color: green;
+    }
+    #message.error {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
@@ -193,12 +202,12 @@ INSERT INTO SanPham(ten,gia,soLuongTon) VALUES
     <h1 class="club-name"> HNT SWIM CLUB</h1>
     <h2>Đăng nhập tài khoản</h2>
 
-    <form>
+    <form id="loginForm">
       <div class="input-group">
         <label for="username">Tên đăng nhập</label>
         <div class="input-wrapper">
           <i class="fa fa-user"></i>
-          <input type="text" id="username" placeholder="Nhập tên đăng nhập">
+          <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập">
         </div>
       </div>
 
@@ -206,7 +215,7 @@ INSERT INTO SanPham(ten,gia,soLuongTon) VALUES
         <label for="password">Mật khẩu</label>
         <div class="input-wrapper">
           <i class="fa fa-lock"></i>
-          <input type="password" id="password" placeholder="Nhập mật khẩu">
+          <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
         </div>
       </div>
 
@@ -223,14 +232,44 @@ INSERT INTO SanPham(ten,gia,soLuongTon) VALUES
       <div class="links">
         <a href="#">Quên mật khẩu?</a> | <a href="#">Đăng ký</a>
       </div>
+      <div id="message"></div>
     </form>
   </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const message = document.getElementById("message");
+
+      if (!username || !password) {
+        message.textContent = "Vui lòng nhập đầy đủ thông tin!";
+        message.className = "error";
+        return;
+      }
+
+      if (username === "admin" && password === "123") {
+        message.textContent = "Đăng nhập thành công!";
+        message.className = "success";
+      } else {
+        message.textContent = "Sai tên đăng nhập hoặc mật khẩu!";
+        message.className = "error";
+      }
+    });
+
+    document.getElementById("cancelBtn").addEventListener("click", function() {
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("message").textContent = "";
+    });
+  </script>
 </body>
 </html>
 
 ```
 
-* Order module (Lab 7)
+### 5.5. Order module (Lab 07)
 
 ```
 
@@ -287,17 +326,19 @@ def create_order(customer_id, product_id, quantity, payment_method):
 
 ```
 
-=> Test:
+## 6. Kết quả test & báo cáo sprint
 
-![ordertest](https://github.com/miao0w025/BT-LAB/blob/main/LAB07/Images/run_test_order.png?raw=true)
+### 6.1 Order Function Test (Lab 07)
 
-### 4.6. Kết quả test & báo cáo sprint
+![ordertest](https://github.com/miao0w025/BT-LAB/blob/main/LAB07/Test_report/pytest_order.png?raw=true)
+![ordertest](https://github.com/miao0w025/BT-LAB/blob/main/LAB07/Test_report/test_order.png?raw=true)
 
-4.6.1. Test case (Lab 08).
+### 6.2. Selenium Login Test (Lab 08).
 
-![pass](https://github.com/miao0w025/BT-LAB/blob/main/LAB08/report-test-OrderFunction.png?raw=true)
+![pass](https://github.com/miao0w025/BT-LAB/blob/main/LAB08/report_test/selenium_test_login.png?raw=true)
+![pass](https://github.com/miao0w025/BT-LAB/blob/main/LAB08/report_test/test_selenium.png?raw=true)
 
-4.6.2. Jira backlog, sprint report (Lab 09).
+### 6.3. Jira backlog, sprint report (Lab 09).
 
 * Jira backlog
 
@@ -331,14 +372,14 @@ Sprint Planning:
 
 ---
 
-## 5. Triển khai
+## 7. Triển khai
 
-* **Ngôn ngữ & Công nghệ:**
+### **Ngôn ngữ & Công nghệ:**
 
   * Backend: Java.
   * Frontend: HTML, CSS, JavaScript.
   * Database: MySQL.
-* **Giao diện mẫu:**
+### **Giao diện mẫu:**
 
   * Trang đăng ký:
  
@@ -346,7 +387,7 @@ Sprint Planning:
 
 ---
 
-## 6. Đánh giá & Kết quả đạt được
+## 8. Đánh giá & Kết quả đạt được
 
 * Hệ thống giúp khách hàng dễ dàng mua sắm trực tuyến.
 * Admin quản lý hiệu quả sản phẩm, đơn hàng, doanh thu.
@@ -354,7 +395,7 @@ Sprint Planning:
 
 ---
 
-## 7. Hướng phát triển
+## 9. Hướng phát triển
 
 * Tích hợp cổng thanh toán online (MoMo, ZaloPay, Visa).
 * Tích hợp chatbot hỗ trợ khách hàng.
@@ -363,6 +404,6 @@ Sprint Planning:
 
 ---
 
-## 8. Kết luận 
+## 10. Kết luận 
 
-Đề tài đã xây dựng thành công một hệ thống bán hàng trực tuyến cơ bản cho CLB bơi lội. Hệ thống giúp giải quyết hạn chế trong quản lý thủ công, mở rộng kênh bán hàng và mang lại trải nghiệm thuận tiện cho khách hàng.
+Qua quá trình thực hiện đề tài, chúng em đã xây dựng thành công một hệ thống bán hàng trực tuyến cơ bản cho CLB bơi lội. Hệ thống không chỉ giải quyết được những hạn chế trong quản lý thủ công mà còn mở rộng kênh bán hàng và mang lại trải nghiệm thuận tiện, nhanh chóng cho khách hàng. Qua đề tài này, chúng em cũng đã nâng cao được kỹ năng lập trình, thiết kế giao diện và quản lý dữ liệu, đồng thời hiểu rõ hơn về quy trình phát triển phần mềm thực tế. Chúng em tin rằng hệ thống này có thể tiếp tục được hoàn thiện và mở rộng để đáp ứng nhu cầu quản lý và kinh doanh hiệu quả hơn trong tương lai.
